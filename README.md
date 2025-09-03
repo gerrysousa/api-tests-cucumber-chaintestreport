@@ -64,29 +64,23 @@ Given I set the multiparts
 
 When I send a "GET" request to "https://fakerestapi.azurewebsites.net" endpoint "/api/v1/Activities"
 
-When I send a "GET" request to "https://fakerestapi.azurewebsites.net" endpoint "/api/v1/Activities"
-with query params
+When I send a "GET" request to "https://fakerestapi.azurewebsites.net" endpoint "/api/v1/Activities" with query params
 | page | 1 |
 | size | 10 |
 
-When I send a "POST" request to "https://fakerestapi.azurewebsites.net" endpoint "
-/api/v1/Activities" with form params
+When I send a "POST" request to "https://fakerestapi.azurewebsites.net" endpoint "/api/v1/Activities" with form params
 | username | john |
 | password | 1234 |
 
-When I send a "GET" request to "https://fakerestapi.azurewebsites.net" endpoint "/api/v1/Activities"
-with headers
+When I send a "GET" request to "https://fakerestapi.azurewebsites.net" endpoint "/api/v1/Activities" with headers
 | Authorization | Bearer {token} |
 
-When I send a "POST" request to "https://fakerestapi.azurewebsites.net" endpoint "/api/v1/upload"
-with multiparts
+When I send a "POST" request to "https://fakerestapi.azurewebsites.net" endpoint "/api/v1/upload" with multiparts
 | file | test.pdf |
 
-When I send a "POST" request to "https://fakerestapi.azurewebsites.net" endpoint "
-/api/v1/Activities" with JSON payload "payload.json"
+When I send a "POST" request to "https://fakerestapi.azurewebsites.net" endpoint "/api/v1/Activities" with JSON payload "payload.json"
 
-When I send a "POST" request to "https://fakerestapi.azurewebsites.net" endpoint "
-/api/v1/Activities" with JSON payload "payload.json" and query params
+When I send a "POST" request to "https://fakerestapi.azurewebsites.net" endpoint "/api/v1/Activities" with JSON payload "payload.json" and query params
 | page | 1 |
 | size | 10 |
 
