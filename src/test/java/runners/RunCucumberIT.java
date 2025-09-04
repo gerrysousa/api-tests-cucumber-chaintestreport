@@ -10,4 +10,4 @@ import org.junit.runner.RunWith;
     features = "src/test/resources/features",
     plugin = {"com.aventstack.chaintest.plugins.ChainTestCucumberListener:", "summary"},
     glue = {"bases"})
-public class RunCucumberTest {}
+public class RunCucumberIT {}
